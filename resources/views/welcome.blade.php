@@ -1,28 +1,28 @@
 @extends('layouts.master')
 
 @section('content')
-    <section class="relative bg-gradient-to-br from-[#482979] via-[#4F2980] to-[#8F2EBC] min-h-screen">
-        <div class="relative container mx-auto ">
-            <div class="max-w-5xl min-h-screen text-white flex flex-col justify-center m-auto text-center lg:text-left">
+    <section class="relative min-h-screen bg-gradient-to-br from-[#482979] via-[#4F2980] to-[#8F2EBC]">
+        <div class="container relative mx-auto">
+            <div class="m-auto flex min-h-screen max-w-5xl flex-col justify-center text-center text-white lg:text-left">
                 <div>
-                    <div class="text-3xl lg:text-5xl font-medium lg:font-bold ">THE #1 BULLY COMMUNITY</div>
-                    <div class="text-2xl lg:text-5xl font-normal lg:font-medium">
+                    <div class="text-3xl font-medium lg:text-5xl lg:font-bold">THE #1 BULLY COMMUNITY</div>
+                    <div class="text-2xl font-normal lg:text-5xl lg:font-medium">
                         IN THE WORLD
                     </div>
-                    <p class="text-xl mt-10">With over a million views each month,no Bully community </p>
+                    <p class="mt-10 text-xl">With over a million views each month,no Bully community </p>
                     <p class="text-xl"> comes close.Add pedigrees, connect with other </p>
                     <p class="text-xl">members, and order the most secure and fastest registration</p>
                     <p class="text-xl">in the market.</p>
                 </div>
 
             </div>
-            <div class="relative lg:absolute right-0 bottom-0">
-                <img class="-mt-48 lg:mt-0 " src="{{ asset('images/hero.png') }}" alt="">
+            <div class="relative right-0 bottom-0 lg:absolute">
+                <img class="-mt-48 lg:mt-0" src="{{ asset('images/hero.png') }}" alt="">
             </div>
         </div>
     </section>
     <section>
-        <x-registration-grid/>
+        <x-registration-grid />
     </section>
     <section>
         <div>
