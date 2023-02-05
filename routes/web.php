@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,18 +13,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [\App\Http\Controllers\PagesController::class, 'home'])->name('home');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/registration/permanent', [\App\Http\Controllers\FormsController::class, 'createPermanent'])->name('registration.permanent');
+Route::post('/registration/permanent', [\App\Http\Controllers\FormsController::class, 'storePermanent']);
 
-Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-});
+Route::get('/registration/kennel', [\App\Http\Controllers\FormsController::class, 'createKennel'])->name('registration.kennel');
+Route::post('/registration/kennel', [\App\Http\Controllers\FormsController::class, 'storeKennel']);
 
-require __DIR__.'/auth.php';
+Route::get('/registration/litter', [\App\Http\Controllers\FormsController::class, 'createLitter'])->name('registration.litter');
+Route::post('/registration/litter', [\App\Http\Controllers\FormsController::class, 'storeLitter']);
+
+//Route::get('/dashboard', function () {
+//    return view('dashboard');
+//})->middleware(['auth', 'verified'])->name('dashboard');
+//
+//Route::middleware('auth')->group(function () {
+//    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+//    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+//    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+//});
+//
+//require __DIR__.'/auth.php';
