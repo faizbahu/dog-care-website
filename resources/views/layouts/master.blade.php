@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav id="navbar" class="nav-bar nav fixed z-10 bg-gradient-to-br from-[#442079] via-[#451e79] to-[#572787]">
+    <nav id="navbar" class="py-3 nav-bar nav fixed z-10 bg-gradient-to-br from-[#442079] via-[#451e79] to-[#572787]">
         <div class="container mx-auto">
             <div class="container mx-auto flex items-center justify-between text-black">
                 <div class="flex flex-1 justify-between">
@@ -23,32 +23,44 @@
                     </div>
                     <div id="nav-buttons" class="hidden items-center space-x-10 text-white lg:flex">
                         <ul class="flex space-x-10">
-                            <li><a class="nav-items py-2 text-2xl font-medium" href="#">Home</a></li>
-                            <li>
-                                <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
-                                    class="nav-items inline-flex items-center rounded-lg px-4 text-center text-2xl font-medium" type="button">
-                                    Registration
-                                    <svg class="ml-2 h-4 w-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            <li class="py-1 nav-items-hover-effect"><a class="nav-items py-2 text-2xl font-medium" href="#">Home</a></li>
+                            <li class=" ">
+                                <div class="py-1 group inline-block relative">
+                                    <button
+                                        class="font-medium nav-items inline-flex items-center rounded-lg px-4 text-center text-2xl"
+                                        >
+                                        <span class="">Dropdown</span>
+                                        <svg class="ml-2 h-4 w-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                     </svg>
-                                </button>
+                                        </button>
+                                        <ul class="mt-1 z-10 absolute hidden w-44 rounded-lg bg-white shadow group-hover:block">
+                                            <li class="">
+                                              <a
+                                                class="px-3 py-2 block hover:text-[#832DB1] text-black text-sm"
+                                                href="#"
+                                                >Permanent Registration</a
+                                              >
+                                            </li>
+                                            <li class="">
+                                              <a
+                                                class="px-3 py-2 block text-black text-sm hover:text-[#832DB1]"
+                                                href="#"
+                                                >Kennel Registration</a
+                                              >
+                                            </li>
+                                            <li class="">
+                                              <a
+                                                class="px-3 py-2 block text-black text-sm hover:text-[#832DB1]"
+                                                href="#"
+                                                >Litter Regestraion</a
+                                              >
+                                            </li>
+                                          </ul>
+                                </div>
                             </li>
                         </ul>
-                        <div id="dropdown" class="z-10 hidden w-44 divide-y divide-gray-100 rounded-lg bg-white shadow">
-                            <ul class="py-2 text-sm text-black" aria-labelledby="dropdownDefaultButton">
-                                <li class="w-full">
-                                    <a href="#" class="block px-4 py-2 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-                                </li>
-                                <li class="w-full">
-                                    <a href="#" class="block px-4 py-2 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
-                                </li>
-                                <li class="w-full">
-                                    <a href="#" class="block px-4 py-2 dark:hover:bg-gray-600 dark:hover:text-white">Sign
-                                        out</a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                     <div class="flex items-center lg:hidden">
                         <button class="mobile-menu-button outline-none">
@@ -63,7 +75,7 @@
             <div class="mobile-menu mt-8 ml-4 hidden h-52">
                 <div class="flex flex-col space-y-5">
                     <a class="py-2 text-2xl font-medium" href="#">Home</a>
-                    <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+                    <button id="" 
                         class="inline-flex items-center rounded-lg text-center text-2xl font-medium lg:px-4" type="button">Registration
                         <svg class="ml-2 h-4 w-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
@@ -72,7 +84,7 @@
                         </svg>
                     </button>
 
-                    <div id="dropdown" class="z-10 hidden w-44 divide-y divide-gray-100 rounded-lg bg-white shadow dark:bg-gray-700">
+                    <div id="" class="bg-white block rounded-lg shadow w-44 z-10">
                         <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
                             <li>
                                 <a href="#" class="block px-4 py-2 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
