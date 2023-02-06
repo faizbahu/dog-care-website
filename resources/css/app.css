@@ -19,14 +19,13 @@ li {
     display: inline-block;
     position: relative;
     padding-bottom: 5px;
-    margin-right: 10px;
 }
 
 li:last-child {
     margin-right: 0;
 }
 
-li:after {
+.nav-items-hover-effect:after {
     content: '';
     display: block;
     margin: auto;
@@ -34,18 +33,19 @@ li:after {
     width: 0px;
     background: transparent;
     transition: width .5s ease, background-color .5s ease;
+    margin-top: 5px;
 }
 
-li:hover:after {
+.nav-items-hover-effect:hover:after {
     width: 100%;
-    background: #FDE047;
+    background: #832DB1;
 }
 
-.hover-effects {
+.group .hover-effects {
     background-image: linear-gradient(to right,
-    #482979,
-    #4F2980 50%,
-    #ffff 50%);
+            #832DB1,
+            #832DB1 50%,
+            #ffff 50%);
     background-size: 200% 100%;
     background-position: -100%;
     display: inline-block;
@@ -57,9 +57,9 @@ li:hover:after {
     color: white;
 }
 
-.hover-effects:before {
+.group .hover-effects:before {
     content: '';
-    background: #4E297F;
+    background: #832DB1;
     display: block;
     position: absolute;
     bottom: -3px;
@@ -69,11 +69,11 @@ li:hover:after {
     transition: all 0.3s ease-in-out;
 }
 
-.hover-effects:hover {
+.group:hover .hover-effects {
     background-position: 0;
 }
 
-.hover-effects:hover::before {
+.group:hover .hover-effects::before {
     width: 100%;
 }
 

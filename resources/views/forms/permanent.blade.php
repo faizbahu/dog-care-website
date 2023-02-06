@@ -201,7 +201,7 @@
                 </div>
             </div>
             <div class="">
-                <div class="flex-1">
+                {{-- <div class="flex-1">
                     <div class="content mt-10 mb-3 text-xl font-medium">Dog Registration Fee</div>
                     <select class="rounded-md">
                         <option value="" selected disabled hidden>Select</option>
@@ -209,10 +209,19 @@
                         <option value="">3 Days shipping 40$</option>
                         <option value="">Next Day shipping 60$</option>
                     </select>
+                </div> --}}
+                <div class="flex-1">
+                    <div class="content mt-10 mb-3 text-xl font-medium">Dog Registration Fee</div>
+                    <select class="width rounded-md">
+                        <option value="" selected disabled hidden>Select</option>
+                        <option value="">7 Days shipping 10$</option>
+                        <option value="">3 Days shipping 40$</option>
+                        <option value="">Next Day shipping 60$</option>
+                    </select>
                 </div>
             </div>
-            <div class="mt-10 mb-3">
-                <table class="w-full table-auto rounded-md border-2 border-primary_black">
+            <div class="mt-10 mb-3 ">
+                {{-- <table class="w-full table-auto rounded-md border-2 border-primary_black">
                     <thead>
                         <tr>
                             <th colspan="2" class="whitespace-nowrap px-6 py-4 text-xl font-bold text-gray-900">
@@ -254,7 +263,27 @@
                             </td>
                         </tr>
                     </tbody>
-                </table>
+                </table> --}}
+                <div class="shadow-xl">
+                    <h1 class="text-center text-3xl font-bold mb-5">Invoices</h1>
+                    <div class="flex justify-between space-x-20 border border-gray-400 text-center rounded-t-lg">
+                        <h1 class="flex-1 px-2 py-3 rounded-md  text-lg text-gray-900">Regestraion Fess</h1>
+                        <h2 class="flex-1 px-2 py-3 rounded-md  text-lg text-gray-900">100$</h2>
+                    </div>
+                    <div class="flex justify-between space-x-20 border-l border-r border-gray-400 text-center ">
+                        <h1 class="flex-1 px-2 py-3 text-lg text-gray-900">Shipping Fees</h1>
+                        <h2 class="flex-1 px-2 py-3 text-lg text-gray-900">200$</h2>
+                    </div>
+                    <div class="flex justify-between space-x-20 border-l border-r border-t border-gray-400 text-center ">
+                        <h1 class="flex-1 px-2 py-3 text-lg text-gray-900">International Fees</h1>
+                        <h2 class="flex-1 px-2 py-3 text-lg text-gray-900">300$</h2>
+                    </div>
+                    <div class="flex justify-between space-x-20  border border-gray-400 text-center rounded-b-lg">
+                        <h1 class="text-lg flex-1 px-2 py-3 rounded-md first-letter:text-lg font-bold text-gray-900">Total</h1>
+                        <h2 class="text-lg flex-1 px-2 py-3 rounded-md font-bold text-gray-900">600$</h2>
+                    </div>
+                </div>
+
             </div>
             <div class="flex items-center">
                 <div class="flex-1">
