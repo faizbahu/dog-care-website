@@ -1,4 +1,5 @@
 {
+    "name": "bully",
     "private": true,
     "scripts": {
         "dev": "vite",
