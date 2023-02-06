@@ -19,8 +19,10 @@
                         <option value="">French Bulldog</option>
                         <option value="">English Bulldog</option>
                     </select>
-                    <p class="ml-1 font-light text-red-700">
-                        Please enter your breed </p>
+                    @if(false)
+                        <span class="ml-1 font-light text-red-700">
+                            Please enter your first name </span>
+                    @endif
                 </div>
             </div>
             <div class="relative flex space-x-24">
@@ -133,7 +135,6 @@
                                 <td><i class="fa fa-close cursor-pointer text-3xl"></i></td>
                             </tr>
                         </tbody>
-                        </tbody>
                     </table>
                 </div>
             </div>
@@ -155,13 +156,17 @@
             <div class="lg:flex lg:space-x-24">
                 <div class="flex-1">
                     <input type="text" class="width rounded-md" placeholder="First Name"><br>
-                    <p class="ml-1 font-light text-red-700">
-                        Please enter your first name </p>
+                    @if(false)
+                        <span class="ml-1 font-light text-red-700">
+                            Please enter your first name </span>
+                    @endif
                 </div>
                 <div class="flex-1">
                     <input type="text" class="width rounded-md" placeholder="Last Name"><br>
-                    <p class="ml-1 font-light text-red-700">
-                        Please enter your last name </p>
+                    @if(false)
+                        <span class="ml-1 font-light text-red-700">
+                            Please enter your first name </span>
+                    @endif
                 </div>
             </div>
             <div class="flex">
@@ -181,27 +186,35 @@
             <div class="lg:flex lg:space-x-24">
                 <div class="flex-1">
                     <input type="text" class="width rounded-md" placeholder="First Name"><br>
-                    <p class="ml-1 font-light text-red-700">
-                        Please enter your first name </p>
+                    @if(false)
+                        <span class="ml-1 font-light text-red-700">
+                            Please enter your first name </span>
+                    @endif
                 </div>
                 <div class="flex-1">
                     <input type="text" class="width rounded-md" placeholder="Last Name"><br>
-                    <p class="ml-1 font-light text-red-700">
-                        Please enter your last name </p>
+                    @if(false)
+                        <span class="ml-1 font-light text-red-700">
+                            Please enter your first name </span>
+                    @endif
                 </div>
             </div>
             <div class="lg:flex lg:space-x-24">
                 <div class="flex-1">
                     <div class="content mt-10 mb-3 text-xl font-medium">Email</div>
                     <input type="email" class="width rounded-md" placeholder="ex: myname@example.com"><br>
-                    <p class="ml-1 font-light text-red-700">
-                        Please enter your email </p>
+                    @if(false)
+                        <span class="ml-1 font-light text-red-700">
+                            Please enter your first name </span>
+                    @endif
                 </div>
                 <div class="flex-1">
                     <div class="content mt-10 mb-3 text-xl font-medium">Phone Number</div>
                     <input type="tel" class="width rounded-md" placeholder="(000)000-0000"><br>
-                    <p class="ml-1 font-light text-red-700">
-                        Please enter your phone number </p>
+                    @if(false)
+                        <span class="ml-1 font-light text-red-700">
+                            Please enter your first name </span>
+                    @endif
                 </div>
             </div>
             <div class="content mt-10 mb-3 text-xl font-medium">Address</div>
@@ -214,8 +227,10 @@
                         <option value="">Country 3</option>
                         <option value="">Country 4</option>
                     </select>
-                    <p class="ml-1 font-light text-red-700">
-                        Please enter your country </p>
+                    @if(false)
+                        <span class="ml-1 font-light text-red-700">
+                            Please enter your first name </span>
+                    @endif
                 </div>
                 <div class="flex-1">
                     <select class="width rounded-md">
@@ -225,8 +240,10 @@
                         <option value="">State 3</option>
                         <option value="">State 4</option>
                     </select>
-                    <p class="ml-1 font-light text-red-700">
-                        Please enter your state </p>
+                    @if(false)
+                        <span class="ml-1 font-light text-red-700">
+                            Please enter your first name </span>
+                    @endif
                 </div>
             </div>
             <div class="flex items-center">
