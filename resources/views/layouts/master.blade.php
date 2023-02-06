@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Bully Pedex</title>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body>
-    <nav id="navbar" class="nav-bar nav fixed z-10 bg-transparent">
+    <nav id="navbar" class="nav-bar nav fixed z-10 bg-gradient-to-br from-[#442079] via-[#451e79] to-[#572787]">
         <div class="container mx-auto">
             <div class="container mx-auto flex items-center justify-between text-black">
                 <div class="flex flex-1 justify-between">
                     <div>
-                        <a href="#" class="flex items-center py-2">
+                        <a href="" class="flex items-center py-2">
                             <img class="w-32" src="{{ asset('images/logo.png') }}" alt="">
                         </a>
                     </div>
@@ -119,13 +119,15 @@
         window.onscroll = function() {
             scrollFunction()
         };
+        scrollFunction()
 
         function scrollFunction() {
             if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
                 document.getElementById("navbar").style.background = "white";
                 document.getElementById("nav-buttons").style.color = "black";
             } else {
-                document.getElementById("navbar").style.background = "transparent";
+                // document.getElementById("navbar").classList.add ("bg-gradient-to-br from-[#482979] via-[#4D297E] to-[#5A2A8A]");
+                document.getElementById("navbar").style.background = null;
                 document.getElementById("nav-buttons").style.color = "white";
             }
         }

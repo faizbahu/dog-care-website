@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-    <section class="mt-24">
+    <section class="pt-24">
         <x-registration-grid />
     </section>
     <section>
@@ -267,6 +267,11 @@
                     </div>
                 </div>
             </div>
+            <div class="mt-10" >
+            <a href="#">
+                <input class="bg-[#9352A4] cursor-pointer text-white px-10 py-2 text-xl rounded-md " type="submit">
+            </a>
+        </div>
         </form>
     </section>
 @endsection
