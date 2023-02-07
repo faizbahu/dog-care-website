@@ -85,57 +85,70 @@
                         </div>
                     </a>
                 </div>
-                <div class="horizontal-div overflow-x-scroll lg:overflow-x-hidden">
-                    <table class="horizontal mt-10 mb-3 w-full min-w-[520px] table-auto lg:min-w-full">
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Name</th>
-                                <th>Sex</th>
-                                <th>Color</th>
-                                <th>Patern</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody class="adding-height text-center">
-                            <tr class="">
-                                <td class="">1</td>
-                                <td class="border border-primary_black">793795-1</td>
-                                <td><select class="border border-primary_black pt-1 pb-1">
-                                        <option value="" selected>male</option>
-                                        <option value="">female</option>
-                                    </select></td>
-                                <td class="border border-primary_black px-2">
-                                    <input type="color" id="favcolor" name="favcolor" value="#ff0000">
-                                </td>
-                                <td><select class="border border-primary_black pt-1 pb-1">
-                                        <option value="" selected>none</option>
-                                        <option value="">1</option>
-                                        <option value="">2</option>
-                                    </select></td>
-                                <td><i class="fa fa-close cursor-pointer text-3xl"></i></td>
-                            </tr>
-                        </tbody>
-                        <tbody class="adding-height text-center">
-                            <tr class="">
-                                <td class="">2</td>
-                                <td class="border border-primary_black">793795-2</td>
-                                <td><select class="border border-primary_black pt-1 pb-1">
-                                        <option value="" selected>male</option>
-                                        <option value="">female</option>
-                                    </select></td>
-                                <td class="border border-primary_black px-2">
-                                    <input type="color" id="favcolor" name="favcolor" value="#ff0000">
-                                </td>
-                                <td><select class="border border-primary_black pt-1 pb-1">
-                                        <option value="" selected>none</option>
-                                        <option value="">1</option>
-                                        <option value="">2</option>
-                                    </select></td>
-                                <td><i class="fa fa-close cursor-pointer text-3xl"></i></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="border border-gray-500 lg:overflow-x-hidden mt-10 overflow-x-scroll rounded-md shadow-xl">
+                    <div class="">
+                        <div class="shadow rounded divide-x divide-gray-400 flex lg:flex-col">
+                            <div class="lg:flex justify-between  px-5 lg:px-0">
+                                <h2 class="text-left lg:text-center flex-1 font-bold py-3  text-xl text-gray-900">ID</h2>
+                                <h2 class="text-left lg:text-center flex-1 font-bold  py-3  text-xl text-gray-900 ">Name</h2>
+                                <h2 class="text-left lg:text-center flex-1 font-bold py-3  text-xl text-gray-900 ">Sex</h2>
+                                <h2 class="text-left lg:text-center flex-1 font-bold py-3  text-xl text-gray-900 ">Color</h2>
+                                <h2 class="text-left lg:text-center flex-1 font-bold py-3  text-xl text-gray-900 ">Pattern</h2>
+                                <h2 class="text-left lg:text-center flex-1 font-bold py-3  text-xl text-gray-900 ">Action</h2>
+                            </div>
+                            <div class="flex flex-col lg:flex-row justify-between  px-5 lg:px-0">
+                                <div class="text-center flex-1  py-3  text-lg text-gray-900">1</div>
+                                <div class="text-center flex-1 w-fit  text-lg text-gray-900 ">
+                                    <input class="w-[100px] text-center placeholder:text-gray-900 text-lg border-t-0 border-l-0 border-r-0  border-b-4 border-gray-400 hover:border-gray-600" type="text" placeholder="793795-1">
+                                    </div>
+                                <div class="text-center flex-1  py-3  text-lg text-gray-900 "><select class="pt-1 pb-1 border-t-0 border-l-0 border-r-0  border-b-4 border-gray-400 hover:border-gray-600">
+                                    <option value="" selected>male</option>
+                                    <option value="">female</option>
+                                </select></div>
+                                <div class="text-center flex-1  py-3  text-lg text-gray-900 "><input type="color" id="favcolor" name="favcolor" value="#9352A4"></div>
+                                <div class="text-center flex-1  py-3  text-lg text-gray-900 "><select class="pt-1 pb-1 border-t-0 border-l-0 border-r-0  border-b-4 border-gray-400 hover:border-gray-600">
+                                    <option value="" selected>none</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select></div>
+                                <div class="text-center flex-1  py-3  text-lg text-gray-900 "><i class="fa fa-close cursor-pointer text-3xl"></i></div>
+                            </div>
+                            <div class="flex flex-col lg:flex-row justify-between px-5 lg:px-0">
+                                <div class="text-center flex-1  py-3  text-lg text-gray-900">2</div>
+                                <div class="text-center flex-1 w-fit  text-lg text-gray-900 ">
+                                    <input class="w-[100px] text-center placeholder:text-gray-900 text-lg border-t-0 border-l-0 border-r-0  border-b-4 border-gray-400 hover:border-gray-600" type="text" placeholder="793795-2">
+                                    </div>
+                                <div class="text-center flex-1  py-3  text-lg text-gray-900 "><select class="pt-1 pb-1 border-t-0 border-l-0 border-r-0  border-b-4 border-gray-400 hover:border-gray-600">
+                                    <option value="" selected>male</option>
+                                    <option value="">female</option>
+                                </select></div>
+                                <div class="text-center flex-1  py-3  text-lg text-gray-900 "><input type="color" id="favcolor" name="favcolor" value="#9352A4"></div>
+                                <div class="text-center flex-1  py-3  text-lg text-gray-900 "><select class="pt-1 pb-1 border-t-0 border-l-0 border-r-0  border-b-4 border-gray-400 hover:border-gray-600">
+                                    <option value="" selected>none</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select></div>
+                                <div class="text-center flex-1  py-3  text-lg text-gray-900 "><i class="fa fa-close cursor-pointer text-3xl"></i></div>
+                            </div>
+                            <div class="flex flex-col lg:flex-row justify-between px-5 lg:px-0">
+                                <div class="text-center flex-1  py-3  text-lg text-gray-900">3</div>
+                                <div class="text-center flex-1 w-fit  text-lg text-gray-900 ">
+                                    <input class="w-[100px] text-center placeholder:text-gray-900 text-lg border-t-0 border-l-0 border-r-0  border-b-4 border-gray-400 hover:border-gray-600" type="text" placeholder="793795-3">
+                                    </div>
+                                <div class="text-center flex-1  py-3  text-lg text-gray-900 "><select class="pt-1 pb-1 border-t-0 border-l-0 border-r-0  border-b-4 border-gray-400 hover:border-gray-600">
+                                    <option value="" selected>male</option>
+                                    <option value="">female</option>
+                                </select></div>
+                                <div class="text-center flex-1  py-3  text-lg text-gray-900 "><input type="color" id="favcolor" name="favcolor" value="#9352A4"></div>
+                                <div class="text-center flex-1  py-3  text-lg text-gray-900 "><select class="pt-1 pb-1 border-t-0 border-l-0 border-r-0  border-b-4 border-gray-400 hover:border-gray-600">
+                                    <option value="" selected>none</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select></div>
+                                <div class="text-center flex-1  py-3  text-lg text-gray-900 "><i class="fa fa-close cursor-pointer text-3xl"></i></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="mt-10 mb-3 text-3xl font-medium">Sire Information</div>
@@ -152,7 +165,6 @@
                 </div>
             </div>
             <div class="content mt-10 mb-3 text-xl font-medium">Sire owner Name</div>
-
             <div class="lg:flex lg:space-x-24">
                 <div class="flex-1">
                     <input type="text" class="width rounded-md" placeholder="First Name"><br>
