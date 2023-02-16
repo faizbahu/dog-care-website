@@ -47,9 +47,9 @@
                 </div>
             </div>
             <div class="content mt-10 mb-3 text-xl font-medium">Address</div>
-            <div class="lg:flex lg:space-x-24">
+            <div class="lg:flex lg:space-x-24" x-data="{country: 'US'}">
                 <div class="flex-1">
-                    <select id="element" class="width rounded-md">
+                    <select x-model="country" class="width rounded-md">
                         <option value="US">United States</option>
                         <option value="AF">Afghanistan</option>
                         <option value="AX">Aland Islands</option>
@@ -289,7 +289,6 @@
                         <option value="UA">Ukraine</option>
                         <option value="AE">United Arab Emirates</option>
                         <option value="GB">United Kingdom</option>
-                        <option value="US">United States</option>
                         <option value="UM">United States Minor Outlying Islands</option>
                         <option value="UY">Uruguay</option>
                         <option value="UZ">Uzbekistan</option>
@@ -310,7 +309,9 @@
                     @endif
                 </div>
                 <div class="flex-1">
+                    <template x-if="country === 'US'">
                     <select id="second-element" class="width rounded-md">
+                        <option value="">Select State</option>
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
                         <option value="AZ">Arizona</option>
@@ -363,19 +364,12 @@
                         <option value="WI">Wisconsin</option>
                         <option value="WY">Wyoming</option>
                     </select>
+                    </template>
+                    <template x-if="country !== 'US'">
                     <div>
                         <input id="third-element" class="width rounded-md" type="text" placeholder="enter state">
                     </div>
-
-                    <div x-data="{ open: true }">
-                        <button x-on:click="open = ! open">Toggle Dropdown</button>
-
-                        <div x-show="open">
-                            <select>
-                                <option :value="">145345</option>
-                            </select>
-                        </div>
-                    </div>
+                    </template>
 
                     @if (false)
                         <span class="ml-1 font-light text-red-700">
