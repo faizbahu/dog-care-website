@@ -47,7 +47,7 @@
                 </div>
             </div>
             <div class="content mt-10 mb-3 text-xl font-medium">Address</div>
-            <div class="lg:flex lg:space-x-24" x-data="{country: 'US'}">
+            <div class="lg:flex lg:space-x-24" x-data="{ country: 'US' }">
                 <div class="flex-1">
                     <select x-model="country" class="width rounded-md">
                         <option value="US">United States</option>
@@ -310,65 +310,65 @@
                 </div>
                 <div class="flex-1">
                     <template x-if="country === 'US'">
-                    <select id="second-element" class="width rounded-md">
-                        <option value="">Select State</option>
-                        <option value="AL">Alabama</option>
-                        <option value="AK">Alaska</option>
-                        <option value="AZ">Arizona</option>
-                        <option value="AR">Arkansas</option>
-                        <option value="CA">California</option>
-                        <option value="CO">Colorado</option>
-                        <option value="CT">Connecticut</option>
-                        <option value="DE">Delaware</option>
-                        <option value="DC">District Of Columbia</option>
-                        <option value="FL">Florida</option>
-                        <option value="GA">Georgia</option>
-                        <option value="HI">Hawaii</option>
-                        <option value="ID">Idaho</option>
-                        <option value="IL">Illinois</option>
-                        <option value="IN">Indiana</option>
-                        <option value="IA">Iowa</option>
-                        <option value="KS">Kansas</option>
-                        <option value="KY">Kentucky</option>
-                        <option value="LA">Louisiana</option>
-                        <option value="ME">Maine</option>
-                        <option value="MD">Maryland</option>
-                        <option value="MA">Massachusetts</option>
-                        <option value="MI">Michigan</option>
-                        <option value="MN">Minnesota</option>
-                        <option value="MS">Mississippi</option>
-                        <option value="MO">Missouri</option>
-                        <option value="MT">Montana</option>
-                        <option value="NE">Nebraska</option>
-                        <option value="NV">Nevada</option>
-                        <option value="NH">New Hampshire</option>
-                        <option value="NJ">New Jersey</option>
-                        <option value="NM">New Mexico</option>
-                        <option value="NY">New York</option>
-                        <option value="NC">North Carolina</option>
-                        <option value="ND">North Dakota</option>
-                        <option value="OH">Ohio</option>
-                        <option value="OK">Oklahoma</option>
-                        <option value="OR">Oregon</option>
-                        <option value="PA">Pennsylvania</option>
-                        <option value="RI">Rhode Island</option>
-                        <option value="SC">South Carolina</option>
-                        <option value="SD">South Dakota</option>
-                        <option value="TN">Tennessee</option>
-                        <option value="TX">Texas</option>
-                        <option value="UT">Utah</option>
-                        <option value="VT">Vermont</option>
-                        <option value="VA">Virginia</option>
-                        <option value="WA">Washington</option>
-                        <option value="WV">West Virginia</option>
-                        <option value="WI">Wisconsin</option>
-                        <option value="WY">Wyoming</option>
-                    </select>
+                        <select id="second-element" class="width rounded-md">
+                            <option value="">Select State</option>
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="CA">California</option>
+                            <option value="CO">Colorado</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="DE">Delaware</option>
+                            <option value="DC">District Of Columbia</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="ID">Idaho</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IN">Indiana</option>
+                            <option value="IA">Iowa</option>
+                            <option value="KS">Kansas</option>
+                            <option value="KY">Kentucky</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="ME">Maine</option>
+                            <option value="MD">Maryland</option>
+                            <option value="MA">Massachusetts</option>
+                            <option value="MI">Michigan</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="MS">Mississippi</option>
+                            <option value="MO">Missouri</option>
+                            <option value="MT">Montana</option>
+                            <option value="NE">Nebraska</option>
+                            <option value="NV">Nevada</option>
+                            <option value="NH">New Hampshire</option>
+                            <option value="NJ">New Jersey</option>
+                            <option value="NM">New Mexico</option>
+                            <option value="NY">New York</option>
+                            <option value="NC">North Carolina</option>
+                            <option value="ND">North Dakota</option>
+                            <option value="OH">Ohio</option>
+                            <option value="OK">Oklahoma</option>
+                            <option value="OR">Oregon</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="RI">Rhode Island</option>
+                            <option value="SC">South Carolina</option>
+                            <option value="SD">South Dakota</option>
+                            <option value="TN">Tennessee</option>
+                            <option value="TX">Texas</option>
+                            <option value="UT">Utah</option>
+                            <option value="VT">Vermont</option>
+                            <option value="VA">Virginia</option>
+                            <option value="WA">Washington</option>
+                            <option value="WV">West Virginia</option>
+                            <option value="WI">Wisconsin</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
                     </template>
                     <template x-if="country !== 'US'">
-                    <div>
-                        <input id="third-element" class="width rounded-md" type="text" placeholder="enter state">
-                    </div>
+                        <div>
+                            <input class="width rounded-md" type="text" placeholder="Please enter your state">
+                        </div>
                     </template>
 
                     @if (false)
@@ -519,7 +519,8 @@
                             <p class="text-xs text-gray-500 dark:text-gray-400">PNG, JPG, HEIF, GIF & PDF upto
                                 10MB</p>
                         </div>
-                        <input id="dropzone-file" type="file" class="hidden" />
+                        <input id="dropzone-file" accept="image/*" type="file" class="hidden" />
+
                     </label>
                 </div>
             </div>
@@ -572,11 +573,22 @@
                     <input class="bg-[#9352A4] cursor-pointer text-white px-10 py-2 text-xl rounded-md " type="submit">
                 </a>
             </div>
+
+
+
+
+
+            <input type="file" />
+
+
+
+
         </form>
     </section>
 @endsection
 
 @push('scripts')
+    <script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             let signaturePad = new SignaturePad(document.getElementById("signature-pad"), {
@@ -592,21 +604,9 @@
             });
         });
 
-        var e = document.getElementById("element");
+        const inputElement = document.querySelector('input[type="file"]');
 
-        // function onChange() {
-        //     var value = e.value;
-        //     if (value == 'US') {
-        //         document.getElementById("second-element").style.display = 'block';
-        //         document.getElementById("third-element").style.display = 'none';
-        //     } else if (value != 'US') {
-        //         document.getElementById("second-element").style.display = 'none';
-        //         document.getElementById("third-element").style.display = 'block';
-        //     }
-
-        //     console.log(value);
-        // }
-        // e.onchange = onChange;
-        // onChange();
+        // Create a FilePond instance
+        const pond = FilePond.create(inputElement);
     </script>
 @endpush
