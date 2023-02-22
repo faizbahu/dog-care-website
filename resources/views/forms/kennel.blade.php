@@ -312,6 +312,7 @@
                 <div class="flex-1">
                     <template x-if="country==='US'">
                         <select class="width rounded-md" value="">
+                            <option value="">Select State</option>
                             <option selceted value="AL">Alabama</option>
                             <option value="AK">Alaska</option>
                             <option value="AZ">Arizona</option>

@@ -377,6 +377,22 @@
                     @endif
                 </div>
             </div>
+            <div class="lg:flex lg:space-x-24 mt-5">
+                <div class="flex-1">
+                    <input type="email" class="width rounded-md" placeholder="STREET ADDRESS">
+                </div>
+                <div class="flex-1">
+                    <input type="tel" class="width rounded-md" placeholder="STREET ADDRESS 2 (OPTIONAL)">
+                </div>
+            </div>
+            <div class="lg:flex lg:space-x-24 mt-5">
+                <div class="flex-1">
+                    <input type="email" class="width rounded-md" placeholder="CITY">
+                </div>
+                <div class="flex-1">
+                    <input type="tel" class="width rounded-md" placeholder="Postal/Zip Code">
+                </div>
+            </div>
             <div class="mt-10 mb-3 text-3xl font-medium">Dog Information</div>
             <div class="lg:w-2/4 lg:pr-12">
                 <div>
@@ -573,16 +589,6 @@
                     <input class="bg-[#9352A4] cursor-pointer text-white px-10 py-2 text-xl rounded-md " type="submit">
                 </a>
             </div>
-
-
-
-
-
-            <input type="file" />
-
-
-
-
         </form>
     </section>
 @endsection
@@ -603,10 +609,5 @@
                 signaturePad.clear();
             });
         });
-
-        const inputElement = document.querySelector('input[type="file"]');
-
-        // Create a FilePond instance
-        const pond = FilePond.create(inputElement);
     </script>
 @endpush

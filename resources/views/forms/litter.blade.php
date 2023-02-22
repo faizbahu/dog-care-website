@@ -105,18 +105,18 @@
                                 <div class="text-center flex-1  py-3  text-lg text-gray-900">1</div>
                                 <div class="text-center flex-1 w-fit  text-lg text-gray-900 ">
                                     <input
-                                        class="focus:border-gray-400 focus:ring-0 w-[100px] text-center placeholder:text-gray-900 text-lg border-t-0 border-l-0 border-r-0  border-b-4 border-gray-400 hover:border-gray-600"
+                                        class="focus:border-gray-600 focus:ring-0 w-[100px] text-center placeholder:text-gray-900 text-lg border-t-0 border-l-0 border-r-0  border-b-4 border-gray-400 hover:border-gray-600"
                                         type="text" placeholder="793795-1">
                                 </div>
                                 <div class="text-center flex-1  py-3  text-lg text-gray-900 "><select
-                                        class="focus:border-gray-400 focus:ring-0 pt-1 pb-1 border-t-0 border-l-0 border-r-0  border-b-4 border-gray-400 hover:border-gray-600">
+                                        class="focus:border-gray-600 focus:ring-0 pt-1 pb-1 border-t-0 border-l-0 border-r-0  border-b-4 border-gray-400 hover:border-gray-600">
                                         <option value="" selected>male</option>
                                         <option value="">female</option>
                                     </select></div>
                                 <div class="text-center flex-1  py-3  text-lg text-gray-900 "><input type="color"
                                         id="favcolor" name="favcolor" value="#9352A4"></div>
                                 <div class="text-center flex-1  py-3  text-lg text-gray-900 "><select
-                                        class=" focus:border-gray-400 focus:ring-0 pt-1 pb-1 border-t-0 border-l-0 border-r-0  border-b-4 border-gray-400 hover:border-gray-600">
+                                        class=" focus:border-gray-600 focus:ring-0 pt-1 pb-1 border-t-0 border-l-0 border-r-0  border-b-4 border-gray-400 hover:border-gray-600">
                                         <option value="" selected>none</option>
                                         <option value="">1</option>
                                         <option value="">2</option>
@@ -128,18 +128,18 @@
                                 <div class="text-center flex-1  py-3  text-lg text-gray-900">2</div>
                                 <div class="text-center flex-1 w-fit  text-lg text-gray-900 ">
                                     <input
-                                        class="focus:border-gray-400 focus:ring-0 w-[100px] text-center placeholder:text-gray-900 text-lg border-t-0 border-l-0 border-r-0  border-b-4 border-gray-400 hover:border-gray-600"
+                                        class="focus:border-gray-600 focus:ring-0 w-[100px] text-center placeholder:text-gray-900 text-lg border-t-0 border-l-0 border-r-0  border-b-4 border-gray-400 hover:border-gray-600"
                                         type="text" placeholder="793795-2">
                                 </div>
                                 <div class="text-center flex-1  py-3  text-lg text-gray-900 "><select
-                                        class="focus:border-gray-400 focus:ring-0 pt-1 pb-1 border-t-0 border-l-0 border-r-0  border-b-4 border-gray-400 hover:border-gray-600">
+                                        class="focus:border-gray-600 focus:ring-0 pt-1 pb-1 border-t-0 border-l-0 border-r-0  border-b-4 border-gray-400 hover:border-gray-600">
                                         <option value="" selected>male</option>
                                         <option value="">female</option>
                                     </select></div>
                                 <div class="text-center flex-1  py-3  text-lg text-gray-900 "><input type="color"
                                         id="favcolor" name="favcolor" value="#9352A4"></div>
                                 <div class="text-center flex-1  py-3  text-lg text-gray-900 "><select
-                                        class="focus:border-gray-400 focus:ring-0 pt-1 pb-1 border-t-0 border-l-0 border-r-0  border-b-4 border-gray-400 hover:border-gray-600">
+                                        class="focus:border-gray-600 focus:ring-0 pt-1 pb-1 border-t-0 border-l-0 border-r-0  border-b-4 border-gray-400 hover:border-gray-600">
                                         <option value="" selected>none</option>
                                         <option value="">1</option>
                                         <option value="">2</option>
@@ -151,18 +151,18 @@
                                 <div class="text-center flex-1  py-3  text-lg text-gray-900">3</div>
                                 <div class="text-center flex-1 w-fit  text-lg text-gray-900 ">
                                     <input
-                                        class="focus:border-gray-400 focus:ring-0 w-[100px] text-center placeholder:text-gray-900 text-lg border-t-0 border-l-0 border-r-0  border-b-4 border-gray-400 hover:border-gray-600"
+                                        class="focus:border-gray-600 focus:ring-0 w-[100px] text-center placeholder:text-gray-900 text-lg border-t-0 border-l-0 border-r-0  border-b-4 border-gray-400 hover:border-gray-600"
                                         type="text" placeholder="793795-3">
                                 </div>
                                 <div class="text-center flex-1  py-3  text-lg text-gray-900 "><select
-                                        class="focus:border-gray-400 focus:ring-0 pt-1 pb-1 border-t-0 border-l-0 border-r-0  border-b-4 border-gray-400 hover:border-gray-600">
+                                        class="focus:border-gray-600 focus:ring-0 pt-1 pb-1 border-t-0 border-l-0 border-r-0  border-b-4 border-gray-400 hover:border-gray-600">
                                         <option value="" selected>male</option>
                                         <option value="">female</option>
                                     </select></div>
                                 <div class="text-center flex-1  py-3  text-lg text-gray-900 "><input type="color"
                                         id="favcolor" name="favcolor" value="#9352A4"></div>
                                 <div class="text-center flex-1  py-3  text-lg text-gray-900 "><select
-                                        class="focus:border-gray-400 focus:ring-0 pt-1 pb-1 border-t-0 border-l-0 border-r-0  border-b-4 border-gray-400 hover:border-gray-600">
+                                        class="focus:border-gray-600 focus:ring-0 pt-1 pb-1 border-t-0 border-l-0 border-r-0  border-b-4 border-gray-400 hover:border-gray-600">
                                         <option value="" selected>none</option>
                                         <option value="">1</option>
                                         <option value="">2</option>
@@ -538,6 +538,7 @@
                 <div class="flex-1">
                     <template x-if="country==='US'">
                         <select class="width rounded-md">
+                            <option value="">Select State</option>
                             <option selceted value="AL">Alabama</option>
                             <option value="AK">Alaska</option>
                             <option value="AZ">Arizona</option>
@@ -600,6 +601,22 @@
                         <span class="ml-1 font-light text-red-700">
                             Please enter your first name </span>
                     @endif
+                </div>
+            </div>
+            <div class="lg:flex lg:space-x-24 mt-5">
+                <div class="flex-1">
+                    <input type="email" class="width rounded-md" placeholder="STREET ADDRESS">
+                </div>
+                <div class="flex-1">
+                    <input type="tel" class="width rounded-md" placeholder="STREET ADDRESS 2 (OPTIONAL)">
+                </div>
+            </div>
+            <div class="lg:flex lg:space-x-24 mt-5">
+                <div class="flex-1">
+                    <input type="email" class="width rounded-md" placeholder="CITY">
+                </div>
+                <div class="flex-1">
+                    <input type="tel" class="width rounded-md" placeholder="Postal/Zip Code">
                 </div>
             </div>
             <div class="flex items-center">
