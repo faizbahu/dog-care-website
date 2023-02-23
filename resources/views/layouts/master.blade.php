@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +10,7 @@
     <title>Bully Pedex</title>
     <link rel="icon" type="image/png" href="{{ asset('images/logo.png') }}">
 
+    @livewireStyles
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
@@ -152,6 +152,7 @@
             }
         }
     </script>
+    @livewireScripts
     @stack('scripts')
 </body>
 

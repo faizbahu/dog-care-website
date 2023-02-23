@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FormsController;
+use App\Http\Controllers\PagesController;
+use App\Http\Livewire\Registration\Permanent;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,16 +16,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [\App\Http\Controllers\PagesController::class, 'home'])->name('home');
+Route::get('/', [PagesController::class, 'home'])->name('home');
 
-Route::get('/registration/permanent', [\App\Http\Controllers\FormsController::class, 'createPermanent'])->name('registration.permanent');
-Route::post('/registration/permanent', [\App\Http\Controllers\FormsController::class, 'storePermanent']);
+Route::get('/registration/permanent', Permanent::class)->name('registration.permanent');
 
-Route::get('/registration/kennel', [\App\Http\Controllers\FormsController::class, 'createKennel'])->name('registration.kennel');
-Route::post('/registration/kennel', [\App\Http\Controllers\FormsController::class, 'storeKennel']);
+Route::get('/permanent', [
+    FormsController::class,
+    'createPermanent'
+])->name('registration.permanent');
 
-Route::get('/registration/litter', [\App\Http\Controllers\FormsController::class, 'createLitter'])->name('registration.litter');
-Route::post('/registration/litter', [\App\Http\Controllers\FormsController::class, 'storeLitter']);
+Route::get('/registration/kennel', [
+    FormsController::class,
+    'createKennel'
+])->name('registration.kennel');
+Route::post('/registration/kennel', [FormsController::class, 'storeKennel']);
+
+Route::get('/registration/litter', [
+    FormsController::class,
+    'createLitter'
+])->name('registration.litter');
+Route::post('/registration/litter', [FormsController::class, 'storeLitter']);
 
 //Route::get('/dashboard', function () {
 //    return view('dashboard');

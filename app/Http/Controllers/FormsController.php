@@ -11,7 +11,6 @@ class FormsController extends Controller
 
     public function storePermanent()
     {
-
     }
 
     public function createKennel()
@@ -21,7 +20,6 @@ class FormsController extends Controller
 
     public function storeKennel()
     {
-
     }
 
     public function createLitter()
@@ -31,6 +29,5 @@ class FormsController extends Controller
 
     public function storeLitter()
     {
-
     }
 }
