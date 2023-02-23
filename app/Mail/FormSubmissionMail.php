@@ -2,16 +2,16 @@
 
 namespace App\Mail;
 
-use Illuminate\Mail\Mailable;
 use Illuminate\Bus\Queueable;
-use Illuminate\Support\Facades\File;
-use Illuminate\Queue\SerializesModels;
-use Illuminate\Mail\Mailables\Content;
-use Illuminate\Mail\Mailables\Address;
-use Illuminate\Mail\Mailables\Envelope;
-use Illuminate\Support\Facades\Storage;
-use Illuminate\Mail\Mailables\Attachment;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Mail\Mailable;
+use Illuminate\Mail\Mailables\Address;
+use Illuminate\Mail\Mailables\Attachment;
+use Illuminate\Mail\Mailables\Content;
+use Illuminate\Mail\Mailables\Envelope;
+use Illuminate\Queue\SerializesModels;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
 
 class FormSubmissionMail extends Mailable implements ShouldQueue
 {
@@ -27,7 +27,7 @@ class FormSubmissionMail extends Mailable implements ShouldQueue
             from: new Address($this->data['email'], "{$this->data['first_name']} {$this->data['last_name']}"),
             to: [new Address(config('mail.from.address'), config('mail.from.name'))],
             replyTo: [
-                new Address($this->data['email'], "{$this->data['first_name']} {$this->data['last_name']}")
+                new Address($this->data['email'], "{$this->data['first_name']} {$this->data['last_name']}"),
             ],
             subject: 'Form Submission'
         );
@@ -53,7 +53,7 @@ class FormSubmissionMail extends Mailable implements ShouldQueue
                 ->withMime($mime);
         }
 
-        $attachments[] = Attachment::fromData(fn() => $this->signature, 'signature.png')
+        $attachments[] = Attachment::fromData(fn () => $this->signature, 'signature.png')
             ->withMime('image/png');
 
         return $attachments;

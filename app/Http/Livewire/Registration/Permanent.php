@@ -2,12 +2,12 @@
 
 namespace App\Http\Livewire\Registration;
 
-use Livewire\Component;
-use Illuminate\Support\Arr;
-use Livewire\WithFileUploads;
-use Illuminate\Validation\Rule;
 use App\Mail\FormSubmissionMail;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Validation\Rule;
+use Livewire\Component;
+use Livewire\WithFileUploads;
 
 class Permanent extends Component
 {
@@ -17,7 +17,9 @@ class Permanent extends Component
 
     public $last_name;
 
-    public $email, $phone;
+    public $email;
+
+    public $phone;
 
     public $country = 'United States';
 
@@ -83,14 +85,14 @@ class Permanent extends Component
         $images = [
             'dog_image' => $this->dog_image->store('photos'),
             'pedigree_image_front' => $this->pedigree_image_front->store('photos'),
-            'pedigree_image_back' => $this->pedigree_image_back->store('photos')
+            'pedigree_image_back' => $this->pedigree_image_back->store('photos'),
         ];
 
         $validated = Arr::except($validated, [
             'dog_image',
             'pedigree_image_front',
             'pedigree_image_back',
-            'signature'
+            'signature',
         ]);
 
         Mail::send(new FormSubmissionMail($validated, $images, $this->signature));

@@ -1,9 +1,9 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FormsController;
 use App\Http\Controllers\PagesController;
 use App\Http\Livewire\Registration\Permanent;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,18 +22,18 @@ Route::get('/registration/permanent', Permanent::class)->name('registration.perm
 
 Route::get('/permanent', [
     FormsController::class,
-    'createPermanent'
+    'createPermanent',
 ])->name('registration.permanent');
 
 Route::get('/registration/kennel', [
     FormsController::class,
-    'createKennel'
+    'createKennel',
 ])->name('registration.kennel');
 Route::post('/registration/kennel', [FormsController::class, 'storeKennel']);
 
 Route::get('/registration/litter', [
     FormsController::class,
-    'createLitter'
+    'createLitter',
 ])->name('registration.litter');
 Route::post('/registration/litter', [FormsController::class, 'storeLitter']);
 
