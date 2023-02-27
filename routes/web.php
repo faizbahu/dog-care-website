@@ -20,11 +20,6 @@ Route::get('/', [PagesController::class, 'home'])->name('home');
 
 Route::get('/registration/permanent', Permanent::class)->name('registration.permanent');
 
-Route::get('/permanent', [
-    FormsController::class,
-    'createPermanent',
-])->name('registration.permanent');
-
 Route::get('/registration/kennel', [
     FormsController::class,
     'createKennel',
